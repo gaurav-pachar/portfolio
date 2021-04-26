@@ -1,0 +1,27 @@
+.navBarItem {
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.navBarItem a {
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    padding: 16px 10px;
+    border-bottom: 4px solid transparent;
+    box-sizing: border-box;
+    display: block;
+}
+
+.navBarItem a:hover,
+.navBarItem a:active,
+.navBarItem a:active{
+    background-color: blue;
+    border-bottom: 4px solid blue;
+    color: white;
+}
+
