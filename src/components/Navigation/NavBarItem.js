@@ -3,12 +3,15 @@ import React from 'react';
 // import {NavLink} from 'react-router-dom';
 import classes from './navBarItem.module.css';
 
-const navBarItem = (props) => (
+const navBarItem = (props) => {
+    return (
     <li className={classes.navBarItem}>
         <a href={props.link} 
-        ClassName={props.active ? classes.active : null}>{props.children}</a>
+        ClassName={props.active ? classes.active : null}>
+            <p>{props.children}</p></a>
    </li>
-);
+    )
+    };
 
 export default navBarItem;
 
