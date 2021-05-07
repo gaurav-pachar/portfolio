@@ -3,12 +3,17 @@ import React from 'react';
 // import {NavLink} from 'react-router-dom';
 import classes from './navBarItem.module.css';
 
+
 const navBarItem = (props) => {
+    console.log(props);
     return (
     <li className={classes.navBarItem}>
         <a href={props.link} 
-        ClassName={props.active ? classes.active : null}>
-            <p>{props.children}</p></a>
+        className={props.active ? classes.active : null}>
+             <p>
+        {props.children}
+            </p>
+            </a>
    </li>
     )
     };

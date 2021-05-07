@@ -2,15 +2,18 @@
 import React from 'react';
 import classes from './navBarItems.module.css';
 import NavBarItem from './NavBarItem';
+import { MdHome , MdPerson , MdMail } from 'react-icons/md';
+import { FaTools , FaUserAlt , FaHome , FaUserGraduate , FaBlackTie } from 'react-icons/fa';
+import { ImUserTie } from 'react-icons/im';
 
 const NavBarItems = (props) => (
 <ul className={classes.navBarItems}>
-    <NavBarItem link="/" active>Home</NavBarItem>
-    <NavBarItem link="/" active>About</NavBarItem>
-    <NavBarItem link="/" active>Skills</NavBarItem>
-    <NavBarItem link="/" active>Academics</NavBarItem>
-    <NavBarItem link="/" active>Experience</NavBarItem>
-    <NavBarItem link="/" active>Contact Me</NavBarItem>
+    <NavBarItem link="/" active><FaHome/>Home</NavBarItem>
+    <NavBarItem link="/" active><FaUserAlt/>About</NavBarItem>
+    <NavBarItem link="/" active><FaTools/>Skills</NavBarItem>
+    <NavBarItem link="/" active><FaUserGraduate/>Academics</NavBarItem>
+    <NavBarItem link="/" active><FaBlackTie/>Experience</NavBarItem>
+    <NavBarItem link="/" active><MdMail/>Contact Me</NavBarItem>
 </ul>
 );
 

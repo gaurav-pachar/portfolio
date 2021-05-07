@@ -10,19 +10,30 @@ a {
     width: 110px;
     display: flex;
     font-weight: 700;
-    color: white;
+    color: rgba(0, 0, 0, 0.54);
     text-decoration: none;
     border-radius: 10px;
     box-shadow: -1px -1px 3px 0px rgba(255, 255, 255, 1), 1.5px 1.5px 3px 0px rgba(110, 110, 112, 1);
 }
 
-.navBarItem a:hover,
-.navBarItem a:active{
+svg{
+    display: grid;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    color: inherit;
+    height: 24px;
+    width: 24px;
+}
+
+a:hover ,
+a:active{
     background-color: #EEEEEE;
-    color: rgba(0, 0, 0, 0.54);;
+    color: rgba(61, 155, 206, 1);
     box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.7), inset 1.5px 1.5px 1px rgba(174, 174, 192, 0.2);
     font-weight: 900;
 }
+
 
 
 
