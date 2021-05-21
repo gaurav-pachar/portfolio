@@ -1,0 +1,8 @@
+.experience{
+  position: absolute;
+  top: 360%;
+  bottom: -360%;
+  left: 0;
+  right: 0;
+  background-color: burlywood;
+}

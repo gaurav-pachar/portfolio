@@ -1,0 +1,53 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: #EEEEEE;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+    top: 10%;
+    right: 0;
+    left: 0;
+    bottom: 10%;
+    background-color: rgba(120, 120, 120, 0.5);
+}
+
+.home h1{
+    text-align: center;
+}
+.home h2{
+    text-align: center;
+    display: flex;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+
+}
+.home ul{
+    display: flex;
+    padding: 0px 0px 0px 0px;
+}
+.home ul svg{
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 24px;
+    width: 24px;
+}
+.scrolldown{
+    position: absolute;
+    bottom: 0%;
+    left: 10%;
+    right: 10%;
+    top: 90%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.scrolldown svg{
+    height: 30px;
+    width: 30px;
+}

@@ -1,0 +1,8 @@
+.academics{
+    position: absolute;
+    top: 260%;
+    bottom: -260%;
+    right: 0%;
+    left: 0%;
+    background-color: blueviolet;
+}

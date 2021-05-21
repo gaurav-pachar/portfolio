@@ -1,0 +1,21 @@
+.aboutMe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    right: 0%;
+    bottom: -60%;
+    background-color: white;
+}
+.aboutMe img{
+    border-radius: 100%;
+    width: 25%;
+    padding: 5%;
+}
+.aboutMe p {
+    width: 50%;
+    text-align: center;
+    align-items: center;
+}

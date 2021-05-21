@@ -1,0 +1,23 @@
+.skills{
+    display: flex;
+    position: absolute;
+    top: 160%;
+    bottom: -160%;
+    background-color: #EEEEEE;
+    left: 0%;
+    right: 0%;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.leftside{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+.rightside{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+

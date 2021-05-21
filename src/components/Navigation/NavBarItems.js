@@ -2,9 +2,9 @@
 import React from 'react';
 import classes from './navBarItems.module.css';
 import NavBarItem from './NavBarItem';
-import { MdHome , MdPerson , MdMail } from 'react-icons/md';
+import { MdMail } from 'react-icons/md';
 import { FaTools , FaUserAlt , FaHome , FaUserGraduate , FaBlackTie } from 'react-icons/fa';
-import { ImUserTie } from 'react-icons/im';
+
 
 const NavBarItems = (props) => (
 <ul className={classes.navBarItems}>
