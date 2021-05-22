@@ -7,9 +7,10 @@ import Skills from './components/skills/skills';
 import Academics from './components/Academics/Academics';
 import Experience from './components/Experince/Experience';
 import ContactMe from './components/ContactMe/ContactMe';
+import { Route, Switch } from 'react-router';
 
 
-const App = () => {
+const App = (props) => {
   return (
     <div className={classes.app}>
       <NavBar/>
@@ -26,3 +27,25 @@ const App = () => {
 export default App;
 
 
+/*
+<Switch>
+        <Route exact path="/">
+            <Home/>
+          
+        <Route path="/about">
+            <About/>
+        
+        <Route path="/skills">
+            <Skills/>
+        
+        <Route path="/academics">
+            <Academics/>
+        
+        <Route path="/experience">
+            <Experience/>
+        
+        <Route path="/contact">
+            <ContactMe/>
+        
+      </Switch>   
+*/

@@ -3,7 +3,7 @@ import classes from './academics.module.css';
 
 const Academics = (props) => {
     return (
-        <div className={classes.academics}>
+        <div className={classes.academics} id="academics">
             <p>Hi
 
             </p>

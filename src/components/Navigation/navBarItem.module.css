@@ -3,7 +3,7 @@
     padding: 5px;
     }
 
-.navBarItem button {
+.navBarItem a{
     border: none;
     background-color: #EEEEEE;
     justify-content: center;
@@ -12,6 +12,7 @@
     height: 60px;
     width: 110px;
     display: flex;
+    flex-direction: column;
     font-weight: 700;
     color: rgba(0, 0, 0, 0.54);
     text-decoration: none;
@@ -19,7 +20,7 @@
     box-shadow: -1px -1px 3px 0px rgba(255, 255, 255, 1), 1.5px 1.5px 3px 0px rgba(110, 110, 112, 1);
 }
 
-.navBarItem button svg{
+.navBarItem a svg{
     display: grid;
     margin: auto;
     justify-content: center;
@@ -29,8 +30,8 @@
     width: 24px;
 }
 
-.navBarItem button:hover ,
-.navBarItem button:active{
+.navBarItem a:hover ,
+.navBarItem a:active{
     background-color: #EEEEEE;
     color: rgba(61, 155, 206, 1);
     box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.7), inset 1.5px 1.5px 1px rgba(174, 174, 192, 0.2);
@@ -38,14 +39,14 @@
 }
 
 @media screen and (max-width: 500px) {
-    .navBarItem button{
+    .navBarItem a{
           height: 40px;
           width: 100%;
           font-weight: 100;
          
     }
 
-    .navBarItem button svg{
+    .navBarItem a svg{
         margin: auto 10px auto 10px;
         height: 12px;
         width: 12px;

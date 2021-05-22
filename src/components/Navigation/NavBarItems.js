@@ -8,12 +8,12 @@ import { FaTools , FaUserAlt , FaHome , FaUserGraduate , FaBlackTie } from 'reac
 
 const NavBarItems = (props) => (
 <ul className={classes.navBarItems}>
-    <NavBarItem link="/" active><FaHome/>Home</NavBarItem>
-    <NavBarItem link="/" active><FaUserAlt/>About</NavBarItem>
-    <NavBarItem link="/" active><FaTools/>Skills</NavBarItem>
-    <NavBarItem link="/" active><FaUserGraduate/>Academics</NavBarItem>
-    <NavBarItem link="/" active><FaBlackTie/>Experience</NavBarItem>
-    <NavBarItem link="/" active><MdMail/>Contact Me</NavBarItem>
+    <NavBarItem link="/" exact><FaHome/>Home</NavBarItem>
+    <NavBarItem link="/about" ><FaUserAlt/>About</NavBarItem>
+    <NavBarItem link="/skills" ><FaTools/>Skills</NavBarItem>
+    <NavBarItem link="/academics" ><FaUserGraduate/>Academics</NavBarItem>
+    <NavBarItem link="/experience" ><FaBlackTie/>Experience</NavBarItem>
+    <NavBarItem link="/contact" ><MdMail/>Contact Me</NavBarItem>
 </ul>
 );
 

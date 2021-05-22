@@ -50,4 +50,8 @@
 .scrolldown svg{
     height: 30px;
     width: 30px;
+    color: black;
+}
+.scrolldown svg:hover{
+    color: aqua;
 }

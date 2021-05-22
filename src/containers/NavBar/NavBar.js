@@ -13,18 +13,12 @@ import reactDom from 'react-dom';
 
 const NavBar = (props) => {
     
-    const [showMenu, setshowMenu] = useState(false);
+    
     
     return (
         <div className={classes.NavBar}>
              <div className={classes.desktop}>
                  <NavBarItems/>
-             </div>
-             <div>{showMenu ? <MenuStack /> : null}</div>
-             <div className={classes.mobile}>
-             <NavBarItem link="/" active>active</NavBarItem>
-             <NavBarItem clicked={() => setshowMenu(!showMenu)}>Menu</NavBarItem>
-             <NavBarItem link="/" active><MdMail/></NavBarItem>
              </div>
          </div>
     )
@@ -33,26 +27,12 @@ const NavBar = (props) => {
 export default NavBar;
 
 /* 
-<header className={classes.NavBar}>
-         <div className={classes.desktop}>
-             <NavBarItems/>
-         </div>
-         <div className={classes.mobile}>
-             <div>
-             <MenuStack/>
-             </div>
-             <div className={classes.options}>
+<div>{showMenu ? <MenuStack /> : null}</div>
+             <div className={classes.mobile}>
              <NavBarItem link="/" active>active</NavBarItem>
-             <NavBarItem link="/" active>Menu</NavBarItem>
-             <NavBarItem link="/" active>Contact Me</NavBarItem>
+             <NavBarItem clicked={() => setshowMenu(!showMenu)}>Menu</NavBarItem>
+             <NavBarItem link="/" active><MdMail/></NavBarItem>
              </div>
-         </div>
-        </header>
-
-
-        <NavBarItem link="/" active>active</NavBarItem>
-        <NavBarItem link="/" active>Menu</NavBarItem>
-        <NavBarItem link="/" active>Contact Me</NavBarItem>
 
 
 
