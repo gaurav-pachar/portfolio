@@ -1,7 +1,8 @@
 import React from 'react';
 import { FaChevronCircleDown, FaGithub, FaLinkedin, FaSkype } from 'react-icons/fa';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import classes from './home.module.css';
+import { Link } from 'react-scroll';
 
 const Home = (props) => {
     return (
@@ -13,7 +14,7 @@ const Home = (props) => {
             <ul><FaLinkedin/>  <FaGithub/>  <FaSkype/></ul>
         </div>
         <div className={classes.scrolldown}>
-          <NavLink to="/about"><FaChevronCircleDown/></NavLink>
+          <Link to="about" smooth={true} duration={500}><FaChevronCircleDown/></Link>
         </div>
         </>
     )

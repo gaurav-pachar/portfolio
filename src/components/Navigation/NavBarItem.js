@@ -1,18 +1,18 @@
 /*  this file is responsible for every single link in NavBar like about, skill , etc  */
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 // import {NavLink} from 'react-router-dom';
 import classes from './navBarItem.module.css';
+import { Link } from 'react-scroll';
 
 
 const navBarItem = (props) => {
-    
     return (
-    <div className={classes.navBarItem} onClick={props.clicked}>
+    <div className={classes.navBarItem}>
         <Link 
            to={props.link}
-           exact={props.exact}
-           activeClassName={classes.active}>{props.children}</Link>
+           smooth={true} duration={500}
+           activeClass={classes.active}>{props.children}</Link>
    </div>
     );
     };

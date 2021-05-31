@@ -2,25 +2,43 @@
     display: flex;
     flex-direction: column;
     box-shadow: -1px -1px 3px 0px rgba(255, 255, 255, 1), 1.5px 1.5px 3px 0px rgba(110, 110, 112, 1);
-    margin: 30px;
-    padding: 20px;
+    height: 30vh;
+    width: 30vw;
+    margin: 2vw;
+    padding: 1vh;
     border-radius: 20px;
+    background-color: #EEEEEE;
+}
+.box h4 {
+    margin: 1.5vh;
 }
 .box p {
     display: flex;
-    height: 50%;
+    height: 10vh;
     text-align: left;
     margin: 1%;
     text-decoration: underline;
+    box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.7), inset 1.5px 1.5px 1px rgba(66, 66, 71, 0.2);
+    border-radius: 10px;
+    padding: 5px;
 }
+
 .skills_in_cat{
     display: flex;
     flex-direction: row;
 }
-.skills_in_cat svg{
+.skill {
+    padding: 0.1vh;
+    margin: 1px;
+}
+.skill svg{
     filter: grayscale();
-    padding: 5px;
+    padding: 0.2vw;
+    height: 7vh;
+    width: 7vw;
 }
-.skills_in_cat svg:hover{
-       filter: none;
+.skill svg:hover {
+     filter: none;
 }
+
+

@@ -1,18 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classes from './box.module.css';
-import SVG_Components from '../../../assets/svg_components';
+// import MySkills from '../../../assets/MySkills';
 
-const box = (props) => {
+function Box(props) {
+    let [state, setState] = useState('');
+    let [skillId, setSkillId] = useState('');
+
+    console.log(props.svgComp);
+
+   let mouseHoverevent = (event) => {
+       
+       
+            props.svgComp.forEach( Skill => {
+               if (Skill.SkillId === event.target.id) {
+                       setState(Skill.SkillSet);
+                       setSkillId(Skill.SkillId + ':');
+                    }
+               }
+            )
+    }
+    
     return (
         <div className={classes.box}>
-            <p>Fameworks/libraries/Runtimes:-</p>
+            <h4>{props.boxHeading}</h4>
             <div className={classes.skills_in_cat}>
-              {SVG_Components.ReactJS}{SVG_Components.NodeJS}{SVG_Components.expressJS}
-            </div>
-            <p>Routing, React Hooks, React CSS modules, react-icons</p>
+                 {props.svgComp.map(svg => {
+            return(<div className={classes.skill} key={svg.SkillId} id={svg.SkillId} onMouseOver={mouseHoverevent}>
+                       {svg.SkillSvg}
+                         </div>)}
+                          )}
+                        </div>
+                 <h4>{skillId}</h4>
+                  <p>{state}</p>
         </div>
     );
 };
 
 
-export default box;
+export default Box;
+
+
+

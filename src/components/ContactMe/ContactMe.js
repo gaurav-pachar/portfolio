@@ -3,7 +3,7 @@ import classes from './contactMe.module.css';
 
 const ContactMe = (props) => {
     return (
-        <div className={classes.contactMe}>
+        <div className={classes.contactMe} id="contact">
             <button>
                 Submit details
             </button>

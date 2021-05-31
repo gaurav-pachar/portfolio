@@ -8,6 +8,7 @@ import Academics from './components/Academics/Academics';
 import Experience from './components/Experince/Experience';
 import ContactMe from './components/ContactMe/ContactMe';
 import { Route, Switch } from 'react-router';
+import Layout from './containers/Layout/Layout';
 
 
 const App = (props) => {
@@ -19,7 +20,11 @@ const App = (props) => {
       <Skills/>
       <Academics/>
       <Experience/>
-      <ContactMe/>
+      <Switch>
+    <Route exact path="/contact">
+         <ContactMe/>
+           </Route>
+      </Switch>
     </div>
   );
 }
@@ -29,23 +34,14 @@ export default App;
 
 /*
 <Switch>
-        <Route exact path="/">
-            <Home/>
-          
-        <Route path="/about">
-            <About/>
-        
-        <Route path="/skills">
-            <Skills/>
-        
-        <Route path="/academics">
-            <Academics/>
-        
-        <Route path="/experience">
-            <Experience/>
-        
-        <Route path="/contact">
-            <ContactMe/>
-        
-      </Switch>   
+      <Route exact path="/">
+           <Home/>
+           </Route>
+      <Route path="/layout">
+          <Layout/>
+          </Route>
+      <Route path="/contact">
+         <ContactMe/>
+           </Route>
+      </Switch>
 */

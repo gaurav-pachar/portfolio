@@ -6,14 +6,15 @@ import { MdMail } from 'react-icons/md';
 import { FaTools , FaUserAlt , FaHome , FaUserGraduate , FaBlackTie } from 'react-icons/fa';
 
 
+
 const NavBarItems = (props) => (
 <ul className={classes.navBarItems}>
-    <NavBarItem link="/" exact><FaHome/>Home</NavBarItem>
-    <NavBarItem link="/about" ><FaUserAlt/>About</NavBarItem>
-    <NavBarItem link="/skills" ><FaTools/>Skills</NavBarItem>
-    <NavBarItem link="/academics" ><FaUserGraduate/>Academics</NavBarItem>
-    <NavBarItem link="/experience" ><FaBlackTie/>Experience</NavBarItem>
-    <NavBarItem link="/contact" ><MdMail/>Contact Me</NavBarItem>
+    <NavBarItem exact link="home" ><FaHome/>Home</NavBarItem>
+    <NavBarItem exact link="about" ><FaUserAlt/>About</NavBarItem>
+    <NavBarItem exact link="skills" ><FaTools/>Skills</NavBarItem>
+    <NavBarItem exact link="academics" ><FaUserGraduate/>Academics</NavBarItem>
+    <NavBarItem exact link="experience" ><FaBlackTie/>Experience</NavBarItem>
+    <NavBarItem exact link="/contact" ><MdMail/>Contact Me</NavBarItem>
 </ul>
 );
 
