@@ -3,7 +3,7 @@
     top: 0;
     height: 10vh;
     width: 100vw;
-    background-color: rgba(238, 238, 238, 0.7);
+    background-color: rgba(238, 238, 238, 1);
     z-index: 100;
     }
 
@@ -17,19 +17,24 @@
     display: none;
 }
 
-.NavBar .mobile .button {
+.NavBar .mobile button {
     height: 6vh;
-    width: 6vh;
+    width: 15vw;
+    border: none;
+    box-shadow: -1px -1px 3px 0px rgba(255, 255, 255, 1), 1.5px 1.5px 3px 0px rgba(110, 110, 112, 1);
+    border-radius: 10px;
+}
+.NavBar .mobile button svg {
+    height: 4vh;
+    width: 4vh;
+    color: rgba(0, 0, 0, 0.54);
 }
 
 
 @media screen and (max-width: 500px) {
     .NavBar{
-        position: fixed;
-        background-color: #EEEEEE;
         bottom: 0px;
-        top: 90%;
-        height: 10vh;
+        top: auto;
   }
     .NavBar .desktop{
         display: none;
@@ -43,9 +48,5 @@
         margin-right: 9vw;
         margin-top: 1.5vh;
         margin-bottom: 1.5vh;
-    }
-    .NavBar .mobile .button {
-        height: 6vh;
-        width: 6vh;
     }
 }

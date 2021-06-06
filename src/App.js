@@ -2,30 +2,31 @@
 import classes from './app.module.css';
 import Home from './components/Home/Home';
 import NavBar from './containers/NavBar/NavBar';
-import About from './components/AboutMe/About';
-import Skills from './components/skills/skills';
-import Academics from './components/Academics/Academics';
-import Experience from './components/Experince/Experience';
 import ContactMe from './components/ContactMe/ContactMe';
 import { Route, Switch } from 'react-router';
-import Layout from './containers/Layout/Layout';
+import Resume from './containers/Layout/Resume';
+import { BrowserRouter } from 'react-router-dom';
+
 
 
 const App = (props) => {
   return (
+    <BrowserRouter>
     <div className={classes.app}>
       <NavBar/>
-      <Home/>
-      <About/>
-      <Skills/>
-      <Academics/>
-      <Experience/>
       <Switch>
-    <Route exact path="/contact">
+    <Route exact path="/">
+         <Home/>
+           </Route>
+    <Route path="/resume">
+         <Resume/>
+           </Route>
+    <Route path="/contact">
          <ContactMe/>
            </Route>
       </Switch>
     </div>
+    </BrowserRouter>
   );
 }
 

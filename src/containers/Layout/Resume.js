@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import classes from './layout.module.css';
 // import NavBar from '../NavBar/NavBar';
 // import Aux from '../../Auxi';
@@ -8,22 +8,32 @@ import Skills from '../../components/skills/skills';
 import About from '../../components/AboutMe/About';
 import Academics from '../../components/Academics/Academics';
 import Experience from '../../components/Experince/Experience';
-import Home from '../../components/Home/Home';
+import { useDispatch } from 'react-redux'
+import { expand, showMenuBtn } from '../../Redux/btnChngSlice';
+// import Home from '../../components/Home/Home';
+// import { Scroll_Link } from '../../components/Navigation/NavBarItem';
+// import NavBarItems from '../../components/Navigation/NavBarItems';
+// import { Resume_btn_state } from '../../components/Navigation/NavBarItems';
 
 
-const Layout = (props) => {
-    
+const Resume = (props) => {
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(expand());
+        dispatch(showMenuBtn());
+        })
+
    return (
-                   
+      
        <div className={classes.layout}>
-               <Home/>
                <About/>
                <Skills/>
                <Academics/>
                <Experience/>
                 </div>
-                   
+       
     )      
 };
 
-export default Layout;
+export default Resume;

@@ -3,7 +3,7 @@
     flex-direction: column;
     position: relative;
     color: #EEEEEE;
-    height: 90vh;
+    height: 100vh;
     align-items: center;
     justify-content: center;
     right: 0;
@@ -32,6 +32,9 @@
     padding-right: 15px;
     height: 24px;
     width: 24px;
+}
+.home ul svg:hover{
+    color: rgba(61, 155, 206, 1);
 }
 .scrolldown{
     position: relative;

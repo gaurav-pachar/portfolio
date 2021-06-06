@@ -1,8 +1,42 @@
 .academics{
-    position: absolute;
-    top: 280%;
-    bottom: -280%;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    position: relative;
     right: 0%;
     left: 0%;
-    background-color: blueviolet;
+    height: 60vh;
+    background-color: #EEEEEE;
+    justify-content: center;
+    align-items: center;
+}
+.timeline{
+    list-style: none;
+    display: flex;
+    flex-direction: row;  
+}
+.timeline li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10vw;
+}
+.description{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+.description li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5vw;
+    text-align: center;
+}
+@media screen and (max-width: 500px) {
+   .academics{
+       flex-direction: column;
+   }
 }

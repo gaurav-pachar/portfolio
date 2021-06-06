@@ -1,14 +1,15 @@
 .aboutMe{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 70vh;
+    height: 80vh;
     background-color: transparent;
 }
 .aboutMe img{
     border-radius: 100%;
-    width: 25%;
+    width: 25vw;
     margin: 10vh 5vw 5vh;
     box-shadow: 8px 8px 8px 0px rgb(0, 0, 0, 0.7);
 }
@@ -21,4 +22,13 @@
     text-align: center;
     align-items: center;
     box-shadow: 8px 8px 8px 0px rgb(0, 0, 0, 0.7);
+}
+@media screen and (max-width: 500px) {
+     .aboutMe{
+         flex-direction: column;
+         height: auto;
+     }
+     .aboutMe img{
+         width: 40vw;
+     }
 }
