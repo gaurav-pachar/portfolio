@@ -6,8 +6,8 @@ import { MdMail } from 'react-icons/md';
 // import { RiPagesFill } from 'react-icons/ri';
 // import { FaTools , FaUserAlt , FaHome , FaUserGraduate , FaBlackTie } from 'react-icons/fa';
 import { FaHome } from 'react-icons/fa';
-import { useSelector, useDispatch } from 'react-redux';
-import { minimize, showMenuBtn } from '../../Redux/btnChngSlice';
+import { useSelector } from 'react-redux';
+// import { minimize, showMenuBtn } from '../../Redux/btnChngSlice';
 
 /* function Resume_btn_state (st){
     console.log('executed');

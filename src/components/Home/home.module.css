@@ -11,6 +11,7 @@
     left: 0;
     background-color: rgba(120, 120, 120, 0.5);
     z-index: 90;
+    font-family: 'Ubuntu';
 }
 
 .home h1{

@@ -6,6 +6,7 @@
     position: relative;
     height: 80vh;
     background-color: transparent;
+    font-family: 'Raleway';
 }
 .aboutMe img{
     border-radius: 100%;

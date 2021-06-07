@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import classes from './box.module.css';
-import { MdExpandMore, MdExpandLess } from 'react-icons/md';
+// import { MdExpandMore, MdExpandLess } from 'react-icons/md';
 // import MySkills from '../../../assets/MySkills';
 
 function Box(props) {

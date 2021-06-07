@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import { FaGithub, FaLinkedin, FaSkype } from 'react-icons/fa';
 // import { NavLink } from 'react-router-dom';
 import classes from './home.module.css';
 import { useDispatch } from 'react-redux';
