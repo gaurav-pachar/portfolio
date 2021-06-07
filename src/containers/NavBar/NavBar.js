@@ -37,9 +37,9 @@ const NavBar = (props) => {
              </div>
              <div>{menuState ? <MenuStack/> : null}</div>
             <div className={classes.mobile}>
-            <NavigationLink exact link="/"><FaHome/></NavigationLink>
-            { state ? menuBtn : <NavigationLink link="/resume"><RiPagesFill/></NavigationLink>}
-            <NavigationLink link="/contact"><MdMail/></NavigationLink>
+            <NavigationLink exact link="/portfolio/"><FaHome/></NavigationLink>
+            { state ? menuBtn : <NavigationLink link="/portfolio/resume"><RiPagesFill/></NavigationLink>}
+            <NavigationLink link="/portfolio/contact"><MdMail/></NavigationLink>
            </div>
          </div>
          
