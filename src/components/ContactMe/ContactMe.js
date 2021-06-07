@@ -36,8 +36,9 @@ const ContactMe = (props) => {
             setmessage('');
             setname('');
             setemail('');
+            alert('Your Message Sent');
          }, function(error) {
-            console.log('FAILED...', error);
+            alert('Message Not Sent Try Again');
          });
     };
 
