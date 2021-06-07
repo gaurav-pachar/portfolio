@@ -9,6 +9,7 @@ const skills = (props) => {
    
     return (
         <div className={classes.skills} id="skills">
+            <h3>Skills</h3>
             <div className={classes.leftside}>
                 <Box svgComp={[MySkills.Java_Script, MySkills.CSS3, MySkills.HTML5, MySkills.C]} 
                      boxHeading='Languages:'/>

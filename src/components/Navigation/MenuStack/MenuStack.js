@@ -10,8 +10,8 @@ export const MenuStack = (props) => {
         <div className={classes.MenuStack}>
             <ScrollLink to="about"><FaUserAlt/>About</ScrollLink>
             <ScrollLink to="skills"><FaTools/>Skills</ScrollLink>
-            <ScrollLink to="academics"><FaUserGraduate/>Academics</ScrollLink>
             <ScrollLink to="experience"><FaBlackTie/>Experience</ScrollLink>
+            <ScrollLink to="academics"><FaUserGraduate/>Academics</ScrollLink>
                  </div>
     )
 }

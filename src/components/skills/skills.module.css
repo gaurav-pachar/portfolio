@@ -11,15 +11,19 @@
     box-shadow: 8px 8px 8px 0px rgb(0, 0, 0, 0.7);
     margin-bottom: 5vh;
 }
+.skills h3{
+    position: absolute;
+    top: 0;
+}
 .leftside{
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 0 30px;
 }
 .rightside{
     display: flex;
     flex-direction: column;
-    padding: 30px;
+    padding: 0 30px;
 }
 
 @media screen and (max-width: 500px) {
@@ -27,5 +31,12 @@
         flex-direction: column;
         height: auto;
     }
+    .leftside{
+        padding: 5vh 0;
+    }
+    .rightside{
+        padding: 0 0;
+    }
+
 }
 

@@ -9,9 +9,12 @@
     border-radius: 20px;
     background-color: #EEEEEE;
 }
+
 .box h4 {
     margin: 1.5vh;
-    text-wrap:
+}
+.box h5 {
+    margin: 3vh 1.5vh 0;
 }
 
 .box p {
@@ -28,6 +31,8 @@
 .skills_in_cat{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .skill {
     padding: 0.1vh;
@@ -46,7 +51,15 @@
 @media screen and (max-width: 500px) {
     .box{
         height: 30vh;
-        width: 50vw;   
+        width: 70vw;  
+        margin: 2.5vh 0; 
+    }
+    .skill{
+        padding: 0 2vw;
+    }
+    .skill svg{
+       height: 6vh;
+       width: 6vh;
     }
 }
 

@@ -1,42 +1,44 @@
 .academics{
     display: flex;
-    flex-direction: row;
     flex-direction: column;
     position: relative;
     right: 0%;
     left: 0%;
-    height: 60vh;
+    height: 80vh;
     background-color: #EEEEEE;
     justify-content: center;
     align-items: center;
 }
-.timeline{
-    list-style: none;
-    display: flex;
-    flex-direction: row;  
-}
-.timeline li{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 10vw;
+.academics h2{
+    position: absolute;
+    top: 8%;
+    left: 5%;
 }
 .description{
+    position: absolute;
+    top: 15%;
     list-style: none;
     display: flex;
-    flex-direction: row;
-}
-.description li{
-    display: flex;
     flex-direction: column;
+    padding: 0 2vw;
+    margin-top: 7vh;
     justify-content: center;
     align-items: center;
-    margin: 0 5vw;
     text-align: center;
 }
+.description .heading{
+    font-size: 3.5vh;
+}
+.description .info{
+    font-size: 3vh;
+}
+
 @media screen and (max-width: 500px) {
-   .academics{
-       flex-direction: column;
+   .description{
+       margin-top: 0;
+       top: 15%;
+   }
+   .academics h2{
+       top: 3%;
    }
 }

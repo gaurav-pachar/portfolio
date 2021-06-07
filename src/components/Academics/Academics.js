@@ -2,19 +2,51 @@ import React from 'react';
 import classes from './academics.module.css';
 // import SVG_Components from '../../assets/SVG_Components';
 import { VscDebugBreakpointData } from 'react-icons/vsc';
+import MyData from '../../assets/MyData';
 
 const Academics = (props) => {
     return (
-        <div className={classes.academics} id="academics">
-            <ul className={classes.description}>
-              <li>10th<br/><br/><br/><VscDebugBreakpointData/>2009</li>
-              <li>12th<br/>(PCM)<br/><br/><VscDebugBreakpointData/>2011</li>
-              <li>Diploma <br/>(Civil Engineering)<br/><br/><VscDebugBreakpointData/>2013</li>
-              <li>B.Tech (Electrical Engineering) <br/>
-                YMCA University of Science and Technology<br/><br/> <VscDebugBreakpointData/>2016</li> 
-            </ul>
-            
-        </div>
+      <div className={classes.academics} id="academics">
+          
+                     <h2>
+                   Academics:
+                     </h2>
+               
+               <ul className={classes.description}>
+               
+                         
+                       <li className={classes.heading}>
+                      {MyData.Academics.schooling.head}
+                                   </li>
+                       <li className={classes.info}> 
+                            <VscDebugBreakpointData/><br/>
+                         {MyData.Academics.schooling.year}
+                                     </li>
+                                         
+                         <br/><br/>
+                       
+                       <li className={classes.heading}>
+                         {MyData.Academics.diploma.head}<br/>
+                                      </li>
+                         <li className={classes.info}>
+                             {MyData.Academics.diploma.info}<br/>
+                                <VscDebugBreakpointData/><br/>
+                            {MyData.Academics.diploma.year}
+                                      </li>
+                         
+                         <br/><br/>
+                         
+                         <li className={classes.heading}>
+                          {MyData.Academics.graduation.head}
+                                      </li>
+                         <li className={classes.info}> 
+                         {MyData.Academics.graduation.info} <br/>
+                                <VscDebugBreakpointData/><br/>
+                        {MyData.Academics.graduation.year}</li> 
+               
+               </ul>
+          
+      </div>
     )
 }
 

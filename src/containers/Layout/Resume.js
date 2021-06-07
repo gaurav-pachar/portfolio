@@ -29,9 +29,9 @@ const Resume = (props) => {
        <div className={classes.layout}>
                <About/>
                <Skills/>
-               <Academics/>
                <Experience/>
-                </div>
+               <Academics/>
+                  </div>
        
     )      
 };

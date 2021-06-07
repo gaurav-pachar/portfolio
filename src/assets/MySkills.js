@@ -10,7 +10,7 @@ Java_Script: {
 CSS3 : {
     SkillId: 'CSS',
     SkillSvg: SVG_Components.CSS3,
-    SkillSet: "Media queries, CSS Transitions, CSS Animations"},
+    SkillSet: "Construction of CSS Classes, Media queries"},
 
 
 HTML5 :{ 
@@ -28,13 +28,13 @@ C :{
 ReactJS :{ 
     SkillId: 'ReactJS',
     SkillSvg: SVG_Components.ReactJS,
-    SkillSet: "Routing, React Hooks, React CSS modules, react-icons, Redux"},
+    SkillSet: "Routing, React Hooks, Redux, React CSS modules, react-icons"},
 
 
 NodeJS :{ 
     SkillId: 'NodeJS',
     SkillSvg: SVG_Components.NodeJS,
-    SkillSet: "axios, fetch API"},
+    SkillSet: "Axios, Fetch API"},
 
 expressJS :{
     SkillId: 'ExpressJS',
@@ -45,26 +45,26 @@ expressJS :{
 mongoDB :{ 
     SkillId: 'MongoDB',
     SkillSvg: SVG_Components.mongoDB,
-    SkillSet: "DataBase Managment"},
+    SkillSet: "Basic DataBase Managment"},
 
 
 GIT :{ 
     SkillId: 'GIT',
     SkillSvg: SVG_Components.GIT,
-    SkillSet: "GitHub"},
+    SkillSet: ""},
 
 
 VScode :{ 
     SkillId: 'Visual Studio Code',
     SkillSvg: SVG_Components.VScode,
-    SkillSet: " extension like Git " },
+    SkillSet: " Knowledge of using extensions like GIT " },
 
 
 
 Figma :{ 
     SkillId: 'Figma',
     SkillSvg: SVG_Components.Figma,
-    SkillSet: "Figma Web Design Tool"},
+    SkillSet: "Planning Website, Desinging and Editing SVG Components"},
 
 
 

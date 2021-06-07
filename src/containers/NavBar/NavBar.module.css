@@ -15,6 +15,7 @@
 }
 .NavBar .mobile{
     display: none;
+    
 }
 
 .NavBar .mobile button {
@@ -23,11 +24,16 @@
     border: none;
     box-shadow: -1px -1px 3px 0px rgba(255, 255, 255, 1), 1.5px 1.5px 3px 0px rgba(110, 110, 112, 1);
     border-radius: 10px;
+    color: rgba(0, 0, 0, 0.54);
+}
+.NavBar .mobile button:active {
+    color: rgba(61, 155, 206, 1);
+    box-shadow: inset -1px -1px 1px rgba(255, 255, 255, 0.7), inset 1.5px 1.5px 1px rgba(174, 174, 192, 0.2);
 }
 .NavBar .mobile button svg {
     height: 4vh;
     width: 4vh;
-    color: rgba(0, 0, 0, 0.54);
+    color: inherit;
 }
 
 

@@ -4,6 +4,8 @@ import { FaGithub, FaLinkedin, FaSkype } from 'react-icons/fa';
 import classes from './home.module.css';
 import { useDispatch } from 'react-redux';
 import { hideMenu, hideMenuBtn, minimize } from '../../Redux/btnChngSlice';
+import SVG_Components from '../../assets/SVG_Components';
+import MyData from '../../assets/MyData';
 
 const Home = (props) => {
 
@@ -18,17 +20,17 @@ const Home = (props) => {
     return (
        
         <div className={classes.home} id="home">
-            <h1>Hi, I am Gaurav Pachar</h1>
-            <h2>If you have arrived here,
-            you are probably looking for a web developer.</h2>
-            <ul><FaLinkedin/>  <FaGithub/>  <FaSkype/></ul>
+            <h1>{MyData.Home.heading}</h1>
+            <h2>{MyData.Home.para}</h2>
+            <ul><a href={MyData.Home.links.linkedin}>{SVG_Components.LinkedIn}</a>
+                <a href={MyData.Home.links.github}>{SVG_Components.github}</a> </ul>
         </div>
         
         
     )
 }
 
-export default Home
+export default Home;
 
 /*
 <div className={classes.scrolldown}>

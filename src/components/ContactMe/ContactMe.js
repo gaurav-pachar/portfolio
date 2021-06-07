@@ -4,7 +4,8 @@ import classes from './contactMe.module.css';
 import emailjs from 'emailjs-com';
 import { useDispatch } from 'react-redux';
 import { hideMenu, hideMenuBtn, minimize } from '../../Redux/btnChngSlice';
- 
+import { FaFacebookSquare } from 'react-icons/fa';
+import SVG_Components from '../../assets/SVG_Components';
 
 const ContactMe = (props) => {
 
@@ -68,6 +69,11 @@ const ContactMe = (props) => {
                 Send
             </button>
             </form>
+            <div className={classes.socialLink}>
+                <a onClick={() => alert('My Mail-Id is gaurav.pachar@gmail.com')}>{SVG_Components.gmail}</a>
+                <a href='https://github.com/gaurav-pachar'>{SVG_Components.github}</a>
+                <a href='https://www.linkedin.com/in/gaurav-pachar-64b97b1bb/'>{SVG_Components.LinkedIn}</a>
+            </div>
         </div>
     )
 }

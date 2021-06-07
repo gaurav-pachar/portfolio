@@ -13,7 +13,7 @@ const Experience = props => {
                  <a href="https://github.com/gaurav-pachar/portfolio">
                  <img src={image} alt="project 1"/>
                  </a>
-                 <a href="https://github.com/gaurav-pachar/portfolio"><p><FaGithub/> portfolio</p></a>
+                 <a href="https://github.com/gaurav-pachar/portfolio"><p><FaGithub/>  portfolio</p></a>
 
             </div>
             <div className={classes.workExperience}>
