@@ -7,7 +7,7 @@ import { FaTools , FaUserAlt , FaUserGraduate , FaBlackTie } from 'react-icons/f
 
 
 
-const Resume_minimized = (<NavigationLink link="/resume">
+const Resume_minimized = (<NavigationLink link="/portfolio/resume">
                                  <RiPagesFill/>
                                      Resume
                                 </NavigationLink>);

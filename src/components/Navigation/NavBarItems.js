@@ -38,9 +38,9 @@ function NavBarItems (props){
     return (
     
     <div className={classes.navBarItems}>
-       <NavigationLink exact link="/"><FaHome/>Home</NavigationLink>
+       <NavigationLink exact link="/portfolio/"><FaHome/>Home</NavigationLink>
        {state}
-       <NavigationLink link="/contact"><MdMail/>Contact Me</NavigationLink>
+       <NavigationLink link="/portfolio/contact"><MdMail/>Contact Me</NavigationLink>
      </div>
 )};
 
